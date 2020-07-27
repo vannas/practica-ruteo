@@ -5,6 +5,9 @@ import Inicio from '../components/Inicio';
 import Ingreso from '../components/Ingreso';
 import Categoria from '../components/Categoria';
 import Restoran from '../components/Restoran';
+import AcercaDe from '../components/AcercaDe';
+import Imagenes from '../components/Imagenes';
+import Revisiones from '../components/Revisiones';
 import PagNoEncontrada from '../components/PagNoEncontrada';
 
 Vue.use(VueRouter);
@@ -24,8 +27,22 @@ export default new VueRouter({
             component: Categoria
         },
         {
-            path: '/:nombrerestoran',
-            component: Restoran
+            path: '/:nombrerestoran/',
+            component: Restoran,
+            children: [
+                {
+                    path:'',
+                    component: AcercaDe
+                },
+                {
+                    path:'reviews',
+                    component: Revisiones
+                },
+                {
+                    path:'images',
+                    component: Imagenes
+                }
+            ]
         },
         {
             path: '*',

@@ -1,19 +1,32 @@
 <template>
   <div class="container">
-    <h1>Bienvenido al Inicio</h1>
-    <p>
-      Bla Bla, mira un link <a href="#" rel="noopener">Explora</a>.
-    </p>
-    <h3>Proyectos</h3>
-        <ul><li><a href="#" rel="noopener">Map</a></li></ul>
-    <h3>Socios</h3>
-    <ul>
-      <li><a href="#" rel="noopener">Parrillada</a></li>
-      <li><a href="#" rel="noopener">Sushi</a></li>
-      <li><a href="#" rel="noopener">Pizza</a></li>
-      <li><a href="#" rel="noopener">Burger King</a></li>
-      <li><a href="#" rel="noopener">Vegan</a></li>
-    </ul>
+    <div class="row">
+      <div class="col s12 body">
+        <h2>Bienvenido al Portal Gastronómico</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in, nesciunt, 
+        quibusdam eius, veritatis ratione illo quo itaque explicabo odit eaque. 
+        Iste earum quaerat ea blanditiis molestiae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae 
+        facere qui doloremque et maxime quos optio. Placeat temporibus, nostrum
+        Mira un link <a href="#" rel="noopener">Explora</a>.</p>
+
+        <p><img class="girls" src="https://thumbs.dreamstime.com/b/girlfriends-sushi-bar-flat-vector-illustration-young-women-lunch-together-cartoon-characters-girls-eating-fish-noodles-154396045.jpg" alt=""></p>
+         
+        <span class="new badge red">4</span>
+        <span class="new badge blue">4</span>
+        
+        
+        <h5>Menú</h5>
+        <ul>
+          <li><a class="waves-effect waves-light btn red">Lunes a Viernes</a></li>
+          <li><a class="waves-effect waves-light btn orange">Fines de Semana</a></li>
+          <li><a class="waves-effect waves-light btn teal">Especiales</a></li>
+          <li><a class="waves-effect waves-light btn purple">Happy Hour</a></li>
+          <li><a class="waves-effect waves-light btn green">Opciones Veganas</a></li>
+        </ul>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -28,22 +41,83 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+
+#app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color:khaki;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
+
+h2{
+  font-family: Tahoma, sans-serif;
   color: #f03210;
+  font-size: 36px;
+  letter-spacing: 0.2em;
+  margin-top:-20px;
+  width:100%;
+  font-weight: bold;
 }
-.app{
-    background-color: khaki;
-    color:#f03210;
-    }
+
+h5{
+  color: #f03210;
+  letter-spacing: 0.2em;
+  width:20%;
+  margin-left:-10px;
+  margin-top:-20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+
+}
+
+.girls{
+  display:inline-block;
+  width:200px;
+  border-radius: 100px;
+  margin:-10px 10px 40px 10px;
+  opacity:85%;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  display: inline-block;
+  margin:14px 8px;
+  font-size: 1.6em;
+  font-family: Tahoma;
+  text-transform: capitalize;
+  vertical-align: top;
+}
+
+.body{
+  position:relative;
+  display:inline-block;
+  width:100%;
+  border-radius: 50px;
+}
+
+.btn{
+  vertical-align: middle;
+  text-transform:initial;
+  padding-bottom:12px;
+  border-radius:24px;
+  text-decoration: none;
+}
+
+* p {
+  margin: 8px 12px 2px 8px;
+  text-align: justify;
+  display:inline-block;
+  width:28%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+* span{
+  display:inline-block;
+  width:100px;
+}
+
 </style>

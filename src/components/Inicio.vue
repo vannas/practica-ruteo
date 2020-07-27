@@ -51,13 +51,12 @@ export default {
 }
 
 h2{
-  font-family: Tahoma, sans-serif;
-  color: #f03210;
-  font-size: 36px;
-  letter-spacing: 0.2em;
-  margin-top:-20px;
   width:100%;
+  font-family: Tahoma, sans-serif;
+  font-size: 36px;  
   font-weight: bold;
+  color: #f03210;
+  margin-top:-4px;
 }
 
 h5{
@@ -75,13 +74,14 @@ h5{
   display:inline-block;
   width:200px;
   border-radius: 100px;
-  margin:-10px 10px 40px 10px;
+  margin:-20px 50px 12px 60px;
   opacity:85%;
 }
 
 ul{
   list-style: none;
 }
+
 li{
   display: inline-block;
   margin:14px 8px;
@@ -117,6 +117,7 @@ li{
 
 * span{
   display:inline-block;
+  margin-right:30px;
   width:100px;
 }
 

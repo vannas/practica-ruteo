@@ -13,17 +13,20 @@
 
 <script>
  export default {
-            name: 'AcercaDe'
-        }
+    name: 'AcercaDe'
+    }
 </script>
 
 <style scoped>
 
+    .row{
+        margin-top:5px;
+    }
+
     h1 {
-        display:inline-block;
+        display:block;
         font-size:48px;
-        transform: translate(-80px, -60px) rotate(-20deg); 
-        margin:-60px;
+        margin:-10px;
     }
     h2{
         display:inline-block;
@@ -31,16 +34,16 @@
         color:white;
         font-size: 32px;
         letter-spacing: 5px;
-        margin:-100px, -12px;
-        transform: translate(-80px, -50px) rotate(-20deg); 
+        
     }
 
     * p {
         display:inline-block;
-        margin: 2%;
-        max-width:35%;
+        max-width:40%;
+        margin-left:20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 12px;
+        color:white;
     }
 
     .card{
@@ -48,14 +51,13 @@
         display:inline-block;
         background-color:transparent;
         border-radius: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color:white;
     }
 
     .body{
         display:inline-block;
         width:70%;
-        margin-bottom: -60px;
         border-radius: 50px;
         overflow: hidden;
     }

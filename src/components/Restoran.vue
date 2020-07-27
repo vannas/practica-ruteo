@@ -14,11 +14,12 @@
                     eveniet odit ratione velit quia placeat facilis?</p>
 
                 </div>
-                <div>
+                <div id="pic">
                     <img src="https://thumbs.dreamstime.com/b/colorful-restaurant-wall-typography-vector-food-bbq-background-motivational-cafe-menu-lettering-chalkboard-166187073.jpg" alt="food" class="graph">
                 </div>
 
                 <div class="extra">
+                    <router-link to="{ path: `/${nombrerestoran}` }">Info</router-link> | <router-link to="{ path: `/${nombrerestoran}/reviews` }">Reviews</router-link> | <router-link to="{ path: `/${nombrerestoran}/images` }">Imágenes</router-link> 
                     <router-view /> 
                 </div>
             </div>
@@ -39,24 +40,33 @@ h2{
     color:white;
     font-size: 32px;
     letter-spacing: 0.1em;
-    transform: translate(6px, 23px);
+
+}
+
+.pic, .graph{
+    display:inline-block;
+    margin-top:-420px;
+    margin-left:45%;
+    max-width: 370px;        
+    border-radius: 50px;
+    rotate:-4deg; 
 }
 
 .card{
     position:relative;
-    display:block;
+    display:inline-block;
     background-color:transparent;
     color:white;
     border-radius: 100px;
-    margin-bottom: 40px;
+    margin-bottom:5px;
 }
 
 .body{
-    display:inline-flexbox;
+    display:inline-block;
     position:relative;
-    width:60%;
-    margin-top:60px;
-    margin-bottom: -60px;
+    width:40%;
+    margin-top:40px;
+    margin-right:400px;
     border:1px dashed white;
     border-radius: 50px;
     overflow: hidden;
@@ -65,24 +75,14 @@ h2{
 .extra{
     display:inline-block;
     position:relative;
-    margin: 0 auto;
     width:80%;
-    margin-bottom: 25px;
 }
 
 * p {
-    margin:20px;
+    padding:12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-}
-
-.graph{
-    display:inline-block;
-    position:relative;
-    max-width: 400px;        
-    border-radius: 50px;
-    transform: translate(250px, -40px) rotate(-16deg); 
-    margin-bottom:20px;
+    font-size: 14px;
+    color:white;
 }
 
 

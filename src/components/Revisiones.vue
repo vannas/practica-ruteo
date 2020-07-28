@@ -34,7 +34,10 @@
 
 <script>
  export default {
-            name: 'Revisiones'
+            name: 'Revisiones',
+            props: {
+                nombrerestoran:String
+            }
         }
 </script>
 

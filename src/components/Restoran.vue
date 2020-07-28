@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col 10 card red">
                 <div class="card-title">
-                    <h2>Hey! Bienvenido a {{ $route.params.nombrerestoran }}!</h2>
+                    <h2>Hey! Bienvenido a #{{ nombrerestoran }}!</h2>
                 </div>
                 <div class="card body">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo architecto 
@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="extra">
-                    <router-link to="{ path: `/${nombrerestoran}` }">Info</router-link> | <router-link to="{ path: `/${nombrerestoran}/reviews` }">Reviews</router-link> | <router-link to="{ path: `/${nombrerestoran}/images` }">Imágenes</router-link> 
+                    <router-link :to="{ name:'about', params: {nombrerestoran:nombrerestoran} }">Info</router-link> | <router-link :to="{ name:'reviews', params: {nombrestoran:nombrerestoran} }">Reviews</router-link> | <router-link :to="{ name: 'images', params: {nombrerestoran:nombrerestoran} }">Imágenes</router-link> 
                     <router-view /> 
                 </div>
             </div>
@@ -29,7 +29,10 @@
 
 <script>
  export default {
-            name: 'Restoran'
+            name: 'Restoran',
+            props: {
+                nombrerestoran: String
+            }
         }
 </script>
 

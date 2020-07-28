@@ -6,8 +6,8 @@
       <p>
         <router-link to="/">Home</router-link> <i class="material-icons prefix">gesture</i> 
         <router-link to="/login">Login</router-link> <i class="material-icons prefix">gesture</i> 
-        <router-link to="{ path: `/${nombrerestoran}` }">Categoria</router-link> <i class="material-icons prefix">gesture</i> 
-        <router-link to="/:nombrerestoran">Restaurant</router-link>
+        <router-link to="{ name: 'cat', params: {cat:cat} }">Categoria</router-link> <i class="material-icons prefix">gesture</i> 
+        <router-link to="{ name: 'about', params: {about:about}}">Restaurant</router-link>
       </p>
     </div>
 
@@ -20,6 +20,10 @@
 
 export default {
   name: 'App',
+  props: {
+    about: String,
+    cat: String
+  }
 
 }
 </script>

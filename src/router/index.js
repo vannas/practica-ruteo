@@ -24,29 +24,40 @@ export default new VueRouter({
         },
         {
             path: '/category/:idcategoria',
-            component: Categoria
+            component: Categoria,
+            name: 'cat',
+            props: true
         },
         {
             path: '/:nombrerestoran/',
             component: Restoran,
+            props: true,
             children: [
                 {
                     path:'',
-                    component: AcercaDe
+                    component: AcercaDe,
+                    name: 'about',
+                    props: true
+
                 },
                 {
                     path:'reviews',
-                    component: Revisiones
+                    component: Revisiones,
+                    name: 'reviews',
+                    props: true
                 },
                 {
                     path:'images',
-                    component: Imagenes
+                    component: Imagenes,
+                    name: 'images',
+                    props: true
                 }
             ]
         },
         {
             path: '*',
-            component: PagNoEncontrada
+            component: PagNoEncontrada,
+            name: 'error'
         }
     ]
 })

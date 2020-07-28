@@ -2,7 +2,7 @@
     <div class="app container">
         <div class="row">
             <h1><i class="material-icons md-48">face</i><i class="material-icons circle red">local_dining</i><i class="material-icons md-48">face</i><i class="material-icons circle red">local_dining</i><i class="material-icons md-48">face</i><i class="material-icons circle red">local_dining</i><i class="material-icons md-48">face</i><i class="material-icons circle red">local_dining</i></h1>
-            <h2>{{ $route.params.nombrerestoran }}!</h2>
+            <h2>{{ nombrerestoran }}!</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo architecto dignissimos quasi</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore assumenda veritatis facere.</p>
             <p>Doloremque eum est ab, voluptatem, optio totam voluptatum porro modi perferendis eveniet odit ratione velit quia placeat facilis?</p>
@@ -13,7 +13,10 @@
 
 <script>
  export default {
-    name: 'AcercaDe'
+    name: 'AcercaDe',
+    props: {
+        nombrerestoran:String
+    }
     }
 </script>
 
